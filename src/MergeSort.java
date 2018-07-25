@@ -32,8 +32,13 @@ public class MergeSort {
     }
     public static void main(String[] args){
         Random rand = new Random();
-        int arr[] = new int[]{2,5,4,1,0};
-        sort(arr,0,5);
+
+        int arr[] = new int[10];
+        for (int i = 0; i <10; i++) {
+            arr[i]=rand.nextInt(100);
+        }
+        System.out.println(Arrays.toString(arr));
+        sort(arr,0,10);
         System.out.println(Arrays.toString(arr));
     }
 }
